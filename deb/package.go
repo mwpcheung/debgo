@@ -122,6 +122,9 @@ func (pkg *Package) SetField(key, value string) {
 	case "Other":
 		pkg.Other = value
 	default:
+		if pkg.AdditionalControlData == nil {
+			pkg.AdditionalControlData = make(map[string]string)
+		}
 		pkg.AdditionalControlData[key] = value
 	}
 }
