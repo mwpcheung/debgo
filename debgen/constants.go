@@ -1,15 +1,15 @@
 package debgen
 
 import (
-	"github.com/laher/debgo-v0.2/deb"
+	"debgo/deb"
 )
 
 const (
 	GlobGoSources               = "*.go"
-	TemplateDebianSourceFormat  = deb.FormatDefault                                      // Debian source formaat
+	TemplateDebianSourceFormat  = deb.FormatDefault // Debian source formaat
 	TemplateDebianSourceOptions = `tar-ignore = .hg
 tar-ignore = .git
-tar-ignore = .bzr` //specifies files to ignore while building.
+tar-ignore = .bzr`  //specifies files to ignore while building.
 
 	// The debian rules file describes how to build a 'source deb' into a binary deb. The default template here invokes debhelper scripts to automate this process for simple cases.
 	TemplateDebianRulesDefault = `#!/usr/bin/make -f
@@ -114,13 +114,13 @@ Files:{{range .Checksums.ChecksumsMd5}}
  {{.Checksum}} {{.Size}} {{.File}}{{end}}
 {{.Package.Other}}`
 
-	TemplateChangelogHeader       = `{{.Package.Name}} ({{.Package.Version}}) {{.Package.Status}}; urgency=low`
-	TemplateChangelogInitialEntry = `  * Initial import`
-	TemplateChangelogFooter       = ` -- {{.Package.Maintainer}}  {{.EntryDate}}`
-	TemplateChangelogInitial      = TemplateChangelogHeader + "\n\n" + TemplateChangelogInitialEntry + "\n\n" + TemplateChangelogFooter
-	TemplateChangelogAdditionalEntry  = "\n\n" + TemplateChangelogHeader + "\n\n{{.ChangelogEntry}}\n\n" + TemplateChangelogFooter
-	TemplateDebianCopyright       = `Copyright 2014 {{.Package.Name}}`
-	TemplateDebianReadme          = `{{.Package.Name}}
+	TemplateChangelogHeader          = `{{.Package.Name}} ({{.Package.Version}}) {{.Package.Status}}; urgency=low`
+	TemplateChangelogInitialEntry    = `  * Initial import`
+	TemplateChangelogFooter          = ` -- {{.Package.Maintainer}}  {{.EntryDate}}`
+	TemplateChangelogInitial         = TemplateChangelogHeader + "\n\n" + TemplateChangelogInitialEntry + "\n\n" + TemplateChangelogFooter
+	TemplateChangelogAdditionalEntry = "\n\n" + TemplateChangelogHeader + "\n\n{{.ChangelogEntry}}\n\n" + TemplateChangelogFooter
+	TemplateDebianCopyright          = `Copyright 2014 {{.Package.Name}}`
+	TemplateDebianReadme             = `{{.Package.Name}}
 ==========
 
 `

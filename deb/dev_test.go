@@ -1,9 +1,10 @@
 package deb_test
 
 import (
-	"github.com/laher/debgo-v0.2/deb"
 	"log"
 	"testing"
+
+	"debgo/deb"
 )
 
 func Example_buildDevPackage() {

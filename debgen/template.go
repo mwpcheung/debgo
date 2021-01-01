@@ -18,11 +18,12 @@ package debgen
 
 import (
 	"bytes"
-	"github.com/laher/debgo-v0.2/deb"
 	"io/ioutil"
 	"os"
 	"text/template"
 	"time"
+
+	"debgo/deb"
 )
 
 // initialize "template data" object
@@ -36,11 +37,11 @@ func NewTemplateData(pkg *deb.Package) *TemplateData {
 
 //Data for templates
 type TemplateData struct {
-	Package   *deb.Package
-	Deb       *deb.DebWriter
+	Package        *deb.Package
+	Deb            *deb.DebWriter
 	EntryDate      string
 	ChangelogEntry string
-	Checksums *deb.Checksums
+	Checksums      *deb.Checksums
 }
 
 func TemplateFileOrString(templateFile string, templateDefault string, vars interface{}) ([]byte, error) {

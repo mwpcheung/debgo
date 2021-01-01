@@ -3,9 +3,10 @@ package cmdutils
 import (
 	"flag"
 	"fmt"
-	"github.com/laher/debgo-v0.2/deb"
-	"github.com/laher/debgo-v0.2/debgen"
 	"os"
+
+	"debgo/deb"
+	"debgo/debgen"
 )
 
 func InitFlags(name string, pkg *deb.Package, build *debgen.BuildParams) *flag.FlagSet {

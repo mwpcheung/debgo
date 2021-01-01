@@ -2,10 +2,11 @@ package main
 
 import (
 	"flag"
-	"github.com/laher/debgo-v0.2/deb"
-	"github.com/laher/debgo-v0.2/debgen"
 	"log"
 	"os"
+
+	"debgo/deb"
+	"debgo/debgen"
 )
 
 func main() {

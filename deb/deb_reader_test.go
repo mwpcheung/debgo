@@ -1,14 +1,16 @@
 package deb_test
 
 import (
-	"github.com/laher/argo/ar"
-	"github.com/laher/debgo-v0.2/deb"
 	"io"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
 	"testing"
+
+	"github.com/laher/argo/ar"
+
+	"debgo/deb"
 )
 
 func XTest_parse(t *testing.T) {

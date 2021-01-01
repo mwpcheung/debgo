@@ -18,8 +18,9 @@ package debgen
 
 import (
 	"errors"
-	"github.com/laher/debgo-v0.2/deb"
 	"os"
+
+	"debgo/deb"
 )
 
 // BuildParams provides information about a particular build
@@ -49,7 +50,6 @@ func NewBuildParams() *BuildParams {
 	bp.ResourcesDir = deb.ResourcesDirDefault
 	return bp
 }
-
 
 //Initialise build directories (make Temp and Dest directories)
 func (bp *BuildParams) Init() error {

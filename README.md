@@ -23,7 +23,7 @@ Libary usage
 
 Once the API firms up, the preferred way to use debgo will be as a library. It should become most useful as part of a build system.
 
-Please see [godoc](http://godoc.org/pkg/github.com/laher/debgo-v0.2/) for API docs.
+Please see [godoc](http://godoc.org/pkg/debgo/) for API docs.
 
 #### The deb package
 
@@ -44,7 +44,7 @@ You can use debgo from the commandline, but there is no configuration - just fla
 
 debgo comes with a few basic commands for building Debian packages. For the most part, each takes the same arguments.
 
-`go get github.com/laher/debgo-v0.2/cmd/...`
+`go get debgo/cmd/...`
 
  * debgo-deb produces .deb files for each architecture
  * debgo-source produces 3 'source package' files.

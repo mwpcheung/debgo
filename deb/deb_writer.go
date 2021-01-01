@@ -18,10 +18,11 @@ package deb
 
 import (
 	"fmt"
-	"github.com/laher/argo/ar"
 	"io"
 	"os"
 	"path/filepath"
+
+	"github.com/laher/argo/ar"
 )
 
 // DebWriter is an architecture-specific deb
@@ -30,7 +31,7 @@ type DebWriter struct {
 	Architecture        Architecture
 	Filename            string
 	DebianBinaryVersion string
-	ControlArchive       string
+	ControlArchive      string
 	DataArchive         string
 	MappedFiles         map[string]string
 }

@@ -17,20 +17,20 @@
 package debgen
 
 import (
-	"github.com/laher/debgo-v0.2/deb"
-	"github.com/laher/debgo-v0.2/targz"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
-)
 
+	"debgo/deb"
+	"debgo/targz"
+)
 
 //SourcePackageGenerator generates source packages using templates and some overrideable behaviours
 type SourcePackageGenerator struct {
-	SourcePackage *deb.SourcePackage
-	BuildParams *BuildParams
+	SourcePackage   *deb.SourcePackage
+	BuildParams     *BuildParams
 	TemplateStrings map[string]string
 	//DebianFiles map[string]string
 	OrigFiles map[string]string
@@ -38,7 +38,7 @@ type SourcePackageGenerator struct {
 
 //NewSourcePackageGenerator is a factory for SourcePackageGenerator.
 func NewSourcePackageGenerator(sourcePackage *deb.SourcePackage, buildParams *BuildParams) *SourcePackageGenerator {
-	spgen := &SourcePackageGenerator{SourcePackage:sourcePackage, BuildParams:buildParams}
+	spgen := &SourcePackageGenerator{SourcePackage: sourcePackage, BuildParams: buildParams}
 	spgen.TemplateStrings = defaultTemplateStrings()
 	return spgen
 }

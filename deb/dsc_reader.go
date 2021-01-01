@@ -19,7 +19,6 @@ package deb
 import (
 	"bufio"
 	"io"
-	"log"
 	"strings"
 )
 
@@ -29,7 +28,7 @@ type DscReader struct {
 }
 
 //NewDscReader is a factory for reading Dsc files.
-func NewDscReader(rdr io.Reader) (*DscReader) {
+func NewDscReader(rdr io.Reader) *DscReader {
 	return &DscReader{rdr}
 }
 
@@ -47,7 +46,7 @@ func (dscr *DscReader) Parse() (*Package, error) {
 		}
 		if strings.Contains(line, ":") {
 			res := strings.SplitN(line, ":", 2)
-			log.Printf("Control File entry: '%s': %s", res[0], res[1])
+			// log.Printf("Control File entry: '%s': %s", res[0], res[1])
 			pkg.SetField(res[0], res[1])
 		} else {
 
@@ -56,4 +55,3 @@ func (dscr *DscReader) Parse() (*Package, error) {
 	return pkg, nil
 
 }
-

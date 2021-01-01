@@ -18,7 +18,8 @@ package debgen
 
 import (
 	"fmt"
-	"github.com/laher/debgo-v0.2/deb"
+
+	"debgo/deb"
 )
 
 // Default build function for Dev packages.

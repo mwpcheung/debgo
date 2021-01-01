@@ -1,9 +1,10 @@
 package debgen_test
 
 import (
-	"github.com/laher/debgo-v0.2/deb"
-	"github.com/laher/debgo-v0.2/debgen"
 	"log"
+
+	"debgo/deb"
+	"debgo/debgen"
 )
 
 func Example_genDevPackage() {

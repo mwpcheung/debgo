@@ -1,12 +1,13 @@
 package deb_test
 
 import (
-	"github.com/laher/debgo-v0.2/deb"
-	"github.com/laher/debgo-v0.2/targz"
 	"io/ioutil"
 	"log"
 	"path/filepath"
 	"testing"
+
+	"debgo/deb"
+	"debgo/targz"
 )
 
 func Example_buildSourceDeb() {

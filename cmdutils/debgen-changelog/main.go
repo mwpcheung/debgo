@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/laher/debgo-v0.2/cmd"
-	"github.com/laher/debgo-v0.2/deb"
-	"github.com/laher/debgo-v0.2/debgen"
+	"debgo/cmdutils"
+	"debgo/deb"
+	"debgo/debgen"
 	"log"
-	"path/filepath"
 	"os"
+	"path/filepath"
 	"text/template"
 )
 

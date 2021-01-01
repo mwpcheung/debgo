@@ -12,11 +12,12 @@ import (
 	"archive/tar"
 	"bytes"
 	"fmt"
-	"github.com/laher/debgo-v0.2/targz"
 	"io"
 	"log"
 	"os"
 	"path/filepath"
+
+	"debgo/targz"
 )
 
 // change this to true for generating an archive on the Filesystem

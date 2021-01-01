@@ -17,7 +17,7 @@
 package debgen
 
 import (
-	"github.com/laher/debgo-v0.2/deb"
+	"debgo/deb"
 )
 
 // Applies go-specific information to packages.

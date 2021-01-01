@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/laher/debgo-v0.2/cmd"
-	"github.com/laher/debgo-v0.2/deb"
-	"github.com/laher/debgo-v0.2/debgen"
+	"debgo/cmdutils"
+	"debgo/deb"
+	"debgo/debgen"
 	"log"
 )
 
@@ -36,7 +36,7 @@ func main() {
 	}
 	spkg := deb.NewSourcePackage(pkg)
 	sourcesDestinationDir := pkg.Name + "_" + pkg.Version
-	spgen := debgen.NewSourcePackageGenerator(spkg, build) 
+	spgen := debgen.NewSourcePackageGenerator(spkg, build)
 	spgen.OrigFiles, err = debgen.GlobForSources(sourcesRelativeTo, sourceDir, glob, sourcesDestinationDir, []string{build.TmpDir, build.DestDir})
 	if err != nil {
 		log.Fatalf("Error resolving sources: %v", err)

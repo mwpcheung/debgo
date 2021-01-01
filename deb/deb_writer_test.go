@@ -2,13 +2,14 @@ package deb_test
 
 import (
 	"archive/tar"
-	"github.com/laher/debgo-v0.2/deb"
-	"github.com/laher/debgo-v0.2/targz"
 	"log"
 	"os"
 	"path/filepath"
 	"testing"
 	"time"
+
+	"debgo/deb"
+	"debgo/targz"
 )
 
 func Example_buildBinaryDeb() {
