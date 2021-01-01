@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"debgo/deb"
-	"debgo/targz"
+	"github.com/mwpcheung/debgo/deb"
+	"github.com/mwpcheung/debgo/targz"
 )
 
 func Example_buildBinaryDeb() {

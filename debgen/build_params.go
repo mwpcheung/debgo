@@ -20,7 +20,7 @@ import (
 	"errors"
 	"os"
 
-	"debgo/deb"
+	"github.com/mwpcheung/debgo/deb"
 )
 
 // BuildParams provides information about a particular build

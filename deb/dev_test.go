@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	"debgo/deb"
+	"github.com/mwpcheung/debgo/deb"
 )
 
 func Example_buildDevPackage() {

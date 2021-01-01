@@ -17,7 +17,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"debgo/targz"
+	"github.com/mwpcheung/debgo/targz"
 )
 
 // change this to true for generating an archive on the Filesystem

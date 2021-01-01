@@ -25,8 +25,7 @@ import (
 	"strings"
 
 	"github.com/laher/argo/ar"
-
-	"debgo/targz"
+	"github.com/mwpcheung/debgo/targz"
 )
 
 type DebReader struct {

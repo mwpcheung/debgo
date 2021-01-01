@@ -3,8 +3,8 @@ package debgen_test
 import (
 	"log"
 
-	"debgo/deb"
-	"debgo/debgen"
+	"github.com/mwpcheung/debgo/deb"
+	"github.com/mwpcheung/debgo/debgen"
 )
 
 func Example_genSourcePackage() {

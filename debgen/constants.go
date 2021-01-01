@@ -1,8 +1,6 @@
 package debgen
 
-import (
-	"debgo/deb"
-)
+import "github.com/mwpcheung/debgo/deb"
 
 const (
 	GlobGoSources               = "*.go"

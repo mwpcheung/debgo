@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"debgo/deb"
-	"debgo/targz"
+	"github.com/mwpcheung/debgo/deb"
+	"github.com/mwpcheung/debgo/targz"
 )
 
 func Example_buildSourceDeb() {

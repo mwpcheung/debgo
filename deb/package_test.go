@@ -19,7 +19,7 @@ package deb_test
 import (
 	"testing"
 
-	"debgo/deb"
+	"github.com/mwpcheung/debgo/deb"
 )
 
 func TestCopy(t *testing.T) {

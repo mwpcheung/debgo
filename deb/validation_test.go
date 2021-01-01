@@ -20,7 +20,7 @@ import (
 	"log"
 	"testing"
 
-	"debgo/deb"
+	"github.com/mwpcheung/debgo/deb"
 )
 
 var (

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"debgo/deb"
-	"debgo/debgen"
+	"github.com/mwpcheung/debgo/deb"
+	"github.com/mwpcheung/debgo/debgen"
 )
 
 func InitFlags(name string, pkg *deb.Package, build *debgen.BuildParams) *flag.FlagSet {

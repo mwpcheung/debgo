@@ -19,7 +19,7 @@ package debgen
 import (
 	"fmt"
 
-	"debgo/deb"
+	"github.com/mwpcheung/debgo/deb"
 )
 
 // Default build function for Dev packages.

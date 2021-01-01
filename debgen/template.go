@@ -23,7 +23,7 @@ import (
 	"text/template"
 	"time"
 
-	"debgo/deb"
+	"github.com/mwpcheung/debgo/deb"
 )
 
 // initialize "template data" object

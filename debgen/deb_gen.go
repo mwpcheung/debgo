@@ -21,8 +21,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"debgo/deb"
-	"debgo/targz"
+	"github.com/mwpcheung/debgo/deb"
+	"github.com/mwpcheung/debgo/targz"
 )
 
 //DebGenerator generates source packages using templates and some overrideable behaviours

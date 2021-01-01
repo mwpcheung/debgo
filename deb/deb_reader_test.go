@@ -10,7 +10,7 @@ import (
 
 	"github.com/laher/argo/ar"
 
-	"debgo/deb"
+	"github.com/mwpcheung/debgo/deb"
 )
 
 func XTest_parse(t *testing.T) {

@@ -1,12 +1,13 @@
 package main
 
 import (
-	"debgo/cmdutils"
-	"debgo/deb"
-	"debgo/debgen"
 	"log"
 	"os"
 	"path/filepath"
+
+	"github.com/mwpcheung/debgo/cmdutils"
+	"github.com/mwpcheung/debgo/deb"
+	"github.com/mwpcheung/debgo/debgen"
 )
 
 func main() {

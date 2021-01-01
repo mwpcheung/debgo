@@ -17,7 +17,7 @@
 package debgen
 
 import (
-	"debgo/deb"
+	"github.com/mwpcheung/debgo/deb"
 )
 
 // Applies go-specific information to packages.

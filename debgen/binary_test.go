@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"debgo/deb"
-	"debgo/debgen"
+	"github.com/mwpcheung/debgo/deb"
+	"github.com/mwpcheung/debgo/debgen"
 )
 
 func Example_genBinaryPackage() {

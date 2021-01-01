@@ -23,8 +23,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"debgo/deb"
-	"debgo/targz"
+	"github.com/mwpcheung/debgo/deb"
+	"github.com/mwpcheung/debgo/targz"
 )
 
 //SourcePackageGenerator generates source packages using templates and some overrideable behaviours
